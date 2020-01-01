@@ -3,13 +3,11 @@ Lightweight SMTP server able to run custom system commands
 
 VoidSMTP Server (v1.0.0) readme file
 
-VoidSMTP Server is a software designed to work on Tomato operating system (but not limited to). Its intended use is to run a user-specified shell  
-script/command when an email arrives.
+VoidSMTP Server is a software designed to work on Tomato operating system (but not limited to). Its intended use is to run a user-specified shell script/command when an email arrives.
 In order for this to work, you must follow these steps:
 1. Enable the /jffs/ partition on the Tomato router (Administration - JFFS2)
 2. Copy the voidsmtp application to /jffs/voidsmtp
-3. Forward the port 25 on the router as follows: on [v] / Proto [TCP] / Ext Ports [25] / Int address [the LAN IP of the router (192.168.0.1 or 192.168.1.1,  
-etc.)] / Description [VoidSMTP]
+3. Forward the port 25 on the router as follows: on [v] / Proto [TCP] / Ext Ports [25] / Int address [the LAN IP of the router (192.168.0.1 or 192.168.1.1, etc.)] / Description [VoidSMTP]
 4. You must have a (d)dns name associated with your router WAN IP (in the folowing script the "domain.name" is considered to be your domain name).
 5. Add the following lines to the Firewall Script (Administration - Scripts):
 
@@ -26,8 +24,7 @@ voidsmtp [-p PORT] -m eMAIL_ADDRESS -M eMAIL_COMMAND [-r RESET_ADDRESS] [-R RESE
  -M eMAIL_COMMAND       command/script to execute
  -r RESET_ADDRESS       set email reset address (filter)
  -R RESET_COMMAND       command/script to execute
- -l LOG_LEVEL           syslog verbose level (default 0)
-    (0 = INFO, 1 = NOTICE, 2 = WARNING, 3 = ERROR)
+ -l LOG_LEVEL           syslog verbose level (default 0) (0 = INFO, 1 = NOTICE, 2 = WARNING, 3 = ERROR)
  -h                     help
 
 Working example:
