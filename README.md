@@ -19,12 +19,19 @@ iptables -A INPUT -p tcp --dport smtp -j ACCEPT -d !!!LAN_IP!!!
 The parameters for the VoidSMTP are:
 
 voidsmtp [-p PORT] -m eMAIL_ADDRESS -M eMAIL_COMMAND [-r RESET_ADDRESS] [-R RESET_COMMAND] [-l LOG_LEVEL] [-h] [-v]
- -p PORT                TCP/IP port (default 25)
+
+ -p PORT                TCP/IP port (default 25
+ 
  -m eMAIL_ADDRESS       set email address (filter)
+ 
  -M eMAIL_COMMAND       command/script to execute
+ 
  -r RESET_ADDRESS       set email reset address (filter)
+ 
  -R RESET_COMMAND       command/script to execute
+ 
  -l LOG_LEVEL           syslog verbose level (default 0) (0 = INFO, 1 = NOTICE, 2 = WARNING, 3 = ERROR)
+ 
  -h                     help
 
 Working example:
