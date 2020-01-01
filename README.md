@@ -3,7 +3,7 @@ Lightweight SMTP server able to run custom system commands
 
 VoidSMTP Server (v1.0.0) readme file
 
-VoidSMTP Server is a software designed to work on Tomato operating system / firmware (but not limited to). Its intended use is to run a user-specified shell script/command when an email arrives.
+VoidSMTP Server is a software designed to work on Tomato operating system / firmware (but not limited to). Its intended use is to run a user-specified shell script/command when an email arrives. Tested on the WRT54-GL Router.
 In order for this to work, you must follow these steps:
 1. Enable the /jffs/ partition on the Tomato router (Administration - JFFS2)
 2. Copy the voidsmtp application to /jffs/voidsmtp
