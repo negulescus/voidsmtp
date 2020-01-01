@@ -1,0 +1,2 @@
+09.Ian.2009 - v1.0.0 (first release)
+17.Feb.2014 - v1.0.0 License Changed to APACHE 2.0
